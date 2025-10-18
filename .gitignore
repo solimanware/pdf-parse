@@ -140,7 +140,7 @@ vite.config.ts.timestamp-*
 
 
 # build / generate output
-dist/
+# dist/
 bin/worker/worker_source.js
 bin/worker/worker_source.cjs
 
