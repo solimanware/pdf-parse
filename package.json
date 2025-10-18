@@ -1,6 +1,6 @@
 {
 	"name": "pdf-parse",
-	"version": "2.4.4",
+	"version": "2.4.5",
 	"type": "module",
 	"main": "dist/cjs/index.cjs",
 	"module": "dist/esm/index.js",
@@ -101,7 +101,6 @@
 		"build:cjs": "vite build --config configs/vite.config.cjs.ts",
 		"build:browser": "vite build",
 		"build:worker": "vite build --config configs/vite.config.worker.ts",
-
 		"build:utils": "npm run build:utils:ts && npm run build:utils:bundle",
 		"build:utils:ts": "tsc --project configs/tsconfig.utils.json && api-extractor run --local -c configs/api-extractor.utils.jsonc",
 		"build:utils:bundle": "esbuild utils/index.ts --bundle --platform=node --format=cjs --target=node16 --outfile=dist/utils/cjs/index.cjs --sourcemap",
