@@ -141,8 +141,9 @@ vite.config.ts.timestamp-*
 
 # build / generate output
 # dist/
-bin/worker/worker_source.js
-bin/worker/worker_source.cjs
+# Note: worker_source files must be committed for GitHub installs
+# bin/worker/worker_source.js
+# bin/worker/worker_source.cjs
 
 # Test outputs
 tests/**/*.txt
