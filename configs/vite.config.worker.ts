@@ -12,5 +12,14 @@ export default defineConfig({
 			fileName: (format) => `worker_source.${format === 'es' ? 'js' : 'cjs'}`,
 			formats: ['es', 'cjs'],
 		},
+		rollupOptions: {
+			external: [
+				'pdfjs-dist/legacy/build/pdf.worker.min.mjs',
+				'pdfjs-dist/package.json',
+				'node:fs',
+				'node:path',
+				'node:url',
+			],
+		},
 	},
 });
